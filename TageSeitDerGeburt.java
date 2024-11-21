@@ -20,7 +20,7 @@ class TageSeitDerGeburt{
         so
         verwendet
          */
-        long[] MonatsTage = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; //Wo verrechnest du die Tage des Monats? Ich kann die hier nicht sehen...
+        long[] MonatsTage = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30}; //Wo verrechnest du die Tage des Monats? Ich kann die hier nicht sehen...
 
         println("Insgesamt sind es " + TageGeburtsJahr(GebJahr, AktJahr));
 
