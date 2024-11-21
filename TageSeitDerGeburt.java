@@ -15,8 +15,12 @@ class TageSeitDerGeburt{
         var GebJahr = Long.parseLong(readln("Bitte geben sie das Geburtsjahr an: ")); /// Geburtsjahr wird gefragt
         var GebMonat = Long.parseLong(readln("Bitte geben sie den Geburtsmonat an: ")); /// Geburtsmonat wird gefragt
         var GebTag = Long.parseLong(readln("Bitte geben sie den Geburtstag an: ")); /// Geburtstag wird gefragt
-
-        long[] MonatsTage = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+//Kommentare sind übringens nur zwei slashes
+        /*Zeilenkommentare werden
+        so
+        verwendet
+         */
+        long[] MonatsTage = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; //Wo verrechnest du die Tage des Monats? Ich kann die hier nicht sehen...
 
         println("Insgesamt sind es " + TageGeburtsJahr(GebJahr, AktJahr));
 
@@ -36,7 +40,7 @@ class TageSeitDerGeburt{
     { //Wieso verwendest du hier long? Ist das wirklich nötig? Bzw. reicht da nicht ein Int aus? Int nimmt Werte bis: 2147483647
 
         GebJahr = GebJahr + 1;
-//Alternativ in Java auch: GebJahr = GebJahr++;
+//Alternativ in Java auch: GebJahr++;
         while (GebJahr < AktJahr) {//Wie beendest du diese Schleife? Ich erkenne hier kein Inkrement von GebJahr?
             var TageJahr = 0; //Wieso deklarierst du TageJahr hier? Das müsste immer 0+366 ergeben, da du es bei jedem Schleifendurchlauf zurücksetzt
             if (istSchaltjahr(GebJahr)) {
